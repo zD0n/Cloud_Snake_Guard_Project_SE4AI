@@ -1,0 +1,12 @@
+services:
+  ai-service:
+    build: .
+    container_name: ai-service
+    ports:
+      - "5001:5001"
+    networks:
+      - snake-net
+
+networks:
+  snake-net:
+    name: snake-net

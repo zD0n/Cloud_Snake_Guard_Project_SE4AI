@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build: .
+    container_name: frontend
+    ports:
+      - "8080:80"
+    networks:
+      - snake-net
+
+networks:
+  snake-net:
+    name: snake-net
